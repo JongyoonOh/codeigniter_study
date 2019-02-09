@@ -75,6 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
+	<p class="footer">Page use memory  <strong>{memory_usage}</strong> usage. </p>
 </div>
 
 </body>

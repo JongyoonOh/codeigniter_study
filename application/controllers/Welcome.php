@@ -20,15 +20,29 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		//$this->benchmark->mark('code_start');
+
 		$this->load->view('welcome_message');
+		
+		//$this->benchmark->mark('code_end');
+		//echo $this->benchmark->elapsed_time('code_start', 'code_end');
+		//echo $this->benchmark->memory_usage();
 		//$this->testData();
 
 	}
 	public function testData()
 	{
+		$this->benchmark->mark('code_start');
+
 		$this->load->model('codeigniter_study_model');
 		$data = $this->codeigniter_study_model->TestDb();
-		var_dump($data);
+
+		$this->benchmark->mark('code_end');
+
+		echo $this->benchmark->elapsed_time('code_start', 'code_end');
+		echo $this->benchmark->memory_usage();
+		
+		//var_dump($data);
 	}
 	
 }
