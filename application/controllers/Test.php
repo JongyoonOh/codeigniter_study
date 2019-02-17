@@ -5,7 +5,16 @@ class Test extends CI_Controller {
      
     public function index()
     {
-        $this->load->view('test_view');        
+		$this->load->library('unit_test');
+		
+		$test = 1 + 1;
+		$expected_result = 2;
+		$test_name = 'Adds one plus one';
+		echo $this->unit->run($test, $expected_result, $test_name);
+		echo $this->unit->run('Foo', 'is_string');
+        // echo $this->unit->report();
+		// echo $this->unit->result();
+		$this->load->view('test_view');        
     }
 	public function test_viewone()
     {

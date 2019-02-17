@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>unit test</title>
 </head>
 <body>
-<b>Hello Kukaro!</b>
+<b>This is Unit Test</b>
 </body>
 </html>

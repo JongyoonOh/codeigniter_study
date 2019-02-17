@@ -69,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div id="container">
 	<h1>환영합니다 윈도우8 버전</h1>
-
+	<h2><?php phpinfo(); ?></h2>
 	<div id="body">
 		<p>코드이그나이터 설치 후 볼 수 있는 화면입니다.</p>
 	</div>
